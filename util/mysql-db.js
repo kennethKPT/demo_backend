@@ -1,11 +1,12 @@
-const env = require('dotenv').config().parsed;
+const env = require('dotenv').config().parsed; //check .env file to configure DB connection
+const param = require('dotenv').config({path: `.env.${env.ENV}`}).parsed;
 const mysql = require('mysql2');
 
 const pool = mysql.createPool({
-    host: env.DB_HOST,
-    user: env.DB_USER,
-    password: env.DB_PASSWORD,
-    database: env.DB_SCHEMA
+    host: param.DB_HOST,
+    user: param.DB_USER,
+    password: param.DB_PASSWORD,
+    database: param.DB_SCHEMA
 });
 
 module.exports = pool.promise();
