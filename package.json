@@ -1,0 +1,37 @@
+{
+  "name": "demo_backend",
+  "version": "1.0.0",
+  "description": "Demo Backend for Restful API based on NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennethKPT/demo_backend.git"
+  },
+  "keywords": [
+    "Node",
+    "Demo",
+    "Restful",
+    "API"
+  ],
+  "author": "Kenneth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennethKPT/demo_backend/issues"
+  },
+  "homepage": "https://github.com/kennethKPT/demo_backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "mysql2": "^3.3.5"
+  }
+}
